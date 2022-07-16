@@ -1,0 +1,51 @@
+html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #ff3b3b;
+    margin: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 200px;
+    width: 500px;
+}
+.botones{
+    margin-top: 10px;
+}
+.number-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    color: aliceblue;
+    height: 100%;
+    font-size: 3em;
+}
+.card.move-right{
+    animation: move_right 1s forwards;
+}
+@keyframes move_right{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
